@@ -1,0 +1,9 @@
+D:\PROJECT\Infrastucture\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+D:\PROJECT\Infrastucture\Common\bin\Debug\Common.dll
+D:\PROJECT\Infrastucture\Common\bin\Debug\Common.pdb
+D:\PROJECT\Infrastucture\Common\bin\Debug\Core.dll
+D:\PROJECT\Infrastucture\Common\bin\Debug\log4net.dll
+D:\PROJECT\Infrastucture\Common\bin\Debug\Core.pdb
+D:\PROJECT\Infrastucture\Common\bin\Debug\log4net.xml
+D:\PROJECT\Infrastucture\Common\obj\Debug\Common.dll
+D:\PROJECT\Infrastucture\Common\obj\Debug\Common.pdb

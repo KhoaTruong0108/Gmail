@@ -1,0 +1,7 @@
+D:\PROJECT\Infrastucture\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache
+D:\PROJECT\Infrastucture\Core\bin\Debug\Core.dll
+D:\PROJECT\Infrastucture\Core\bin\Debug\Core.pdb
+D:\PROJECT\Infrastucture\Core\bin\Debug\log4net.dll
+D:\PROJECT\Infrastucture\Core\bin\Debug\log4net.xml
+D:\PROJECT\Infrastucture\Core\obj\Debug\Core.dll
+D:\PROJECT\Infrastucture\Core\obj\Debug\Core.pdb
