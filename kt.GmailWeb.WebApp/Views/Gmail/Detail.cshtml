@@ -1,0 +1,80 @@
+﻿@model kt.GmailWeb.WebApp.Models.EmailViewModel
+
+@{
+    ViewBag.Title = "Detail";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detail</h2>
+
+<div>
+    <h4>EmailViewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MailId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MailId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.To)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.To)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.From)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.From)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Bcc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Bcc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Subject)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Subject)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Content")
+        </dt>
+        @if (!string.IsNullOrEmpty(Model.BodyHtml))
+        {
+            <dd>
+                @Html.Raw(Model.BodyHtml)
+            </dd>
+        }
+        else { 
+            <dd>
+                @Html.Raw(Model.Body)
+            </dd>
+        }
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Inbox")
+</p>

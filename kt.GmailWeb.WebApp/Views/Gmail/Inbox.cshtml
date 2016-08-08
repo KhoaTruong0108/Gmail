@@ -1,0 +1,69 @@
+﻿@model kt.GmailWeb.WebApp.Models.InboxViewModel
+@*@model PagedList.IPagedList<kt.GmailWeb.WebApp.Models.EmailViewModel>*@
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Inbox";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Inbox</h2>
+
+<p>
+    @Html.ActionLink("Compose", "Compose")
+</p>
+<table class="table">
+    <tr>
+        <th style="width:20%;">From</th>
+        <th style="width:50%;">Subject</th>
+        <th style="width:20%;">Date</th>
+        <th style="width:10%;"></th>
+    </tr>
+
+    @foreach (var item in Model.Emails)
+    {
+        <tr>
+            <td>
+                @item.From
+            </td>
+            <td>
+                <div style=" text-overflow: ellipsis;overflow: hidden;">
+                    @item.Subject
+                </div>
+            </td>
+            <td>
+                @item.SendDate
+            </td>
+            <td>
+                @Html.ActionLink("Detail", "Detail", new { mailId = item.MailId }) |
+                @Html.ActionLink("Delete", "Delete", new { mailId = item.MailId })
+            </td>
+        </tr>
+    }
+
+</table>
+@Html.PagedListPager(Model.PagerList, page => Url.Action("Inbox", new { page }))
+@*@Html.PagedListPager(Model, page => Url.Action("Inbox", new { page }))*@
+@*<nav>
+        <ul class="pagination">
+            <li>
+                <a href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                </a>
+            </li>
+            @for (int i = 0; i < Model.CurrentPage; i++)
+            {
+
+            }
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li>
+                <a href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                </a>
+            </li>
+        </ul>
+    </nav>*@

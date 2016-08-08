@@ -1,9 +1,0 @@
-D:\PROJECT\Infrastucture\Infrastucture\bin\Debug\Infrastucture.exe.config
-D:\PROJECT\Infrastucture\Infrastucture\bin\Debug\Infrastucture.exe
-D:\PROJECT\Infrastucture\Infrastucture\bin\Debug\Infrastucture.pdb
-D:\PROJECT\Infrastucture\Infrastucture\obj\Debug\Infrastucture.csprojResolveAssemblyReference.cache
-D:\PROJECT\Infrastucture\Infrastucture\obj\Debug\Infrastucture.exe
-D:\PROJECT\Infrastucture\Infrastucture\obj\Debug\Infrastucture.pdb
-D:\PROJECT\Crossover\evaluateproject\Infrastucture\bin\Debug\Infrastucture.exe.config
-D:\PROJECT\Crossover\evaluateproject\Infrastucture\obj\Debug\Infrastucture.exe
-D:\PROJECT\Crossover\evaluateproject\Infrastucture\obj\Debug\Infrastucture.pdb

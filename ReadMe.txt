@@ -1,1 +1,0 @@
-This is a simple project to indicate how to use OAuth 2.0 of Gmail.
